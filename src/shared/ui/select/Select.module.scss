@@ -1,0 +1,45 @@
+.inputSelect__content {
+  padding: 10px 15px;
+  position: relative;
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #dad6d6;
+  background: #fff;
+  color: #000;
+
+  .inputSelect__label {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 300;
+  }
+
+  .options__list {
+    overflow: auto;
+    z-index: 9999;
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    margin-top: 6px;
+    background: #fff;
+    border: 1px solid #dad6d6;
+    max-height: 171px;
+
+    .list__item {
+      padding: 10px 15px;
+      display: flex;
+      justify-content: space-between;
+      border: 1px solid #dad6d6;
+      height: 43px;
+      box-sizing: border-box;
+    }
+
+    .selected {
+      background: #f0efef;
+    }
+  }
+}
