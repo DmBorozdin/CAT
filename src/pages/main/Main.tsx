@@ -3,7 +3,7 @@ import { ICurrenci, Select, useGetCurrenciesQuery } from '../../shared';
 import catLogo from '../../shared/icon/Kitten.png';
 import styles from './Main.module.scss';
 
-const Main: FC = () => {
+export const Main: FC = () => {
   const { data: currencies, isSuccess, isLoading } = useGetCurrenciesQuery();
   const [selectedOption, setSelectedOption] = useState(currencies?.data[0]);
 
@@ -44,5 +44,3 @@ const Main: FC = () => {
     </div>
   );
 };
-
-export default Main;
